@@ -23,8 +23,14 @@
 # 如果需要在 Vant 2 上进行更改，请基于 2.x 分支进行开发
 git clone git@github.com:vant-ui/vant.git
 
+#确保node 16
+nvm use 16
+
+#启用corepack,
+corepack enable
+
 # 安装依赖
-cd vant && yarn
+yarn install
 
 # 进入开发模式，浏览器访问 http://localhost:8080
 yarn dev
